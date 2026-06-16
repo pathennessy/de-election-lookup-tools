@@ -13,3 +13,6 @@ debug_*.py
 
 # macOS
 .DS_Store
+
+# Claude
+CLAUDE.md

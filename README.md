@@ -1,6 +1,12 @@
-# DE Legislator Lookup
+# DE Election Lookup Tools
 
-Command-line tools that take a CSV of Delaware addresses and enrich each row with state legislative district information from the [Delaware FirstMap](https://firstmap.delaware.gov/) Elections Hub.
+A collection of command-line tools for looking up Delaware election and legislative district information using the [Delaware FirstMap](https://firstmap.delaware.gov/) Elections Hub.
+
+## Tools
+
+### de_legislator_lookup
+
+Takes a CSV of Delaware addresses and enriches each row with state legislative district information.
 
 ## What it returns
 
@@ -104,6 +110,7 @@ See `sample_input.csv` for an example. Addresses should be full single-line stri
 Address,Name
 23737 Dupont Blvd Georgetown DE 19947,Sussex County Example
 800 N French St Wilmington DE 19801,Wilmington Example
+35 Loockerman Plaza Dover DE 19901,Kent County Example
 ```
 
 ```bash
@@ -111,7 +118,7 @@ Address,Name
 python de_legislator_lookup.py sample_input.csv --output sample_output.csv
 
 # PowerShell
-.\de_legislator_lookup.ps1 -InputFile sample_input.csv -Output sample_output.csv
+.\de_legislator_lookup.ps1 -InputFile sample_input.csv -OutputFile sample_output.csv
 ```
 
 ## Data source
