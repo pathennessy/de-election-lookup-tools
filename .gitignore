@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Output files
+*.csv
+!sample_input.csv
+
+# Debug scripts
+debug_*.py
+
+# macOS
+.DS_Store
